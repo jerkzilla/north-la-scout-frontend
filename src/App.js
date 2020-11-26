@@ -1,8 +1,13 @@
-import logo from './logo.svg';
 import React from 'react';
-import './App.css';
 
 class App extends React.Component {
+  
+    componentDidMount() {
+      fetch('http://localhost:3000/players')
+      .then(res => res.json())
+      .then(players => console.log(players))
+    }
+  
   render() {
     return (
       <div className="App">
