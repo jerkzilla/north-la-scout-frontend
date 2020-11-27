@@ -6,6 +6,7 @@ export default function playerReducer(state = {players: []}, action) {
         
         case 'ADD_PLAYER':
             return {...state, players: [...state.players, action.payload]}
+            
             default:
             return state
         }

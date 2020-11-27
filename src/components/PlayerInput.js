@@ -20,9 +20,13 @@ class PlayerInput extends Component {
     handleSubmit = (event) => {
         event.preventDefault()
         this.props.addPlayer(this.state)
-
+        this.setState({
+            name: '',
+            school: '',
+            year: '',
+            scout: ''
+        })
     }
-
 
     render() {
         return (
