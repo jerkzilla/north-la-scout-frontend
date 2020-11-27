@@ -5,7 +5,8 @@ const Player = (props) => {
     return (
         <>
             {props.players.map(player =>
-                <li>{player.name} - {player.school} - {player.year}: <br/>
+                <li>
+                    {player.name} - {player.school} - {player.year}: <br/>
                    <p>{player.scout}</p> 
                  </li>
                 )}

@@ -13,8 +13,9 @@ class PlayersContainer extends React.Component {
     render() {
         return (
             <div>
+                <PlayerInput /><br/><br/>
                 <Player players={this.props.players}/>
-                <PlayerInput />
+                
             </div>
 
         )
