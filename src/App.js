@@ -1,17 +1,16 @@
 import React from 'react';
+import {connect} from 'react-redux'
+import { fetchPlayers } from './actions/fetchPlayers';
+import PlayersContainer from './containers/PlayersContainer'
+
 
 class App extends React.Component {
   
-    componentDidMount() {
-      fetch('http://localhost:3000/players')
-      .then(res => res.json())
-      .then(players => console.log(players))
-    }
   
   render() {
     return (
       <div className="App">
-  
+        <PlayersContainer />
       </div>
     )
   }
@@ -19,4 +18,10 @@ class App extends React.Component {
 
 }
 
-export default App;
+// const mSTP = (state) => {
+//   return {
+//     players: state.players
+//   }
+// }
+
+export default connect(null, {fetchPlayers})(App);
