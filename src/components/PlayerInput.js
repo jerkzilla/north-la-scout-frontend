@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import {connect} from 'react-redux'
 import {addPlayer} from '../actions/addPlayer'
+import Button from '../components/Button'
 
 class PlayerInput extends Component {
 

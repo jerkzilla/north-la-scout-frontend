@@ -2,6 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux'
 import { fetchPlayers } from './actions/fetchPlayers';
 import PlayersContainer from './containers/PlayersContainer'
+import Button from './components/Button'
 
 
 class App extends React.Component {
@@ -11,6 +12,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <PlayersContainer />
+        <Button >Button</Button>
       </div>
     )
   }
