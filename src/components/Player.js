@@ -1,4 +1,5 @@
 import React from 'react'
+// import {Redirect} from 'react-router-dom'
 
 const Player = (props) => {
     
@@ -8,7 +9,9 @@ const Player = (props) => {
     
     return (
         <li>
-            {player ? player.name: null} - {player ? player.school : null}
+            
+            {player ? player.name: null} - {player ? player.school : null} - {player ? player.year: null}<br/>
+            <p>{player ? player.scout: null}</p>
             {/* {props.player.name} - {props.player.school} */}
         </li>
     )
