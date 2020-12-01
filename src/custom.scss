@@ -1,0 +1,14 @@
+$body-bg: #000;
+
+// Import Bootstrap and its default variables
+
+// @import "compass/css3";
+@import url("https://fonts.googleapis.com/css?family=Inconsolata");
+
+body {
+  font-family: helvetica;
+  font-weight: 50;
+  background-image: linear-gradient(skyblue, #f0d748);
+  color: white;
+  height: auto;
+}
