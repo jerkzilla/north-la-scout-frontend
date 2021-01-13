@@ -8,6 +8,7 @@ class PlayerInput extends Component {
     name: "",
     school: "",
     year: "",
+    video_link: "",
     scout: "",
   };
 
@@ -24,6 +25,7 @@ class PlayerInput extends Component {
       name: "",
       school: "",
       year: "",
+      video_link: "",
       scout: "",
     });
   };
@@ -56,6 +58,14 @@ class PlayerInput extends Component {
             name="year"
             placeholder="Year"
             value={this.state.year}
+            onChange={this.handleChange}
+          />
+          <br />
+          <input
+            type="text"
+            name="video_link"
+            placeholder="Video Link"
+            value={this.state.video_link}
             onChange={this.handleChange}
           />
           <br />
