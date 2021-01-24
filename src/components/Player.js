@@ -13,6 +13,8 @@ const Player = (props) => {
       <br />
       <p>{player ? player.scout : null}</p>
       <iframe
+        width="800"
+        height="1000"
         name={player ? player.name : null}
         src={player ? player.video_link : null}
       />
