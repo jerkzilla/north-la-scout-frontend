@@ -17,7 +17,7 @@ class PlayersContainer extends React.Component {
             <div>
                 <Switch>
                     <Route path='/players/new' component={PlayerInput} />
-                    <Route path='/players/:id' render={(routerProps) => <Player {...routerProps} players={this.props.players}/>}/>
+                    <Route path='/players/:id' render={(routerProps) => <Player {...routerProps} players={this.props.players} />}/>
                     <Route path='/players' render={(routerProps) => <Players players={this.props.players}/>}/>
                 </Switch>
                 

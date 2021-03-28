@@ -28,6 +28,7 @@ class PlayerInput extends Component {
       video_link: "",
       scout: "",
     });
+    this.props.history.push('/players')
   };
 
   render() {
